@@ -1,7 +1,7 @@
 #### Exapmles In Algorithms book of Sedgewick
 Repo for exercises in the book.
 
-##### 1 Unable to commit. Please let me know who you are.
+##### 1- Error: Unable to commit. Please let me know who you are.
 The first time I tried to commit a file in Atom-Git panel, Atom gives the error "Unable to commit. Please let me know who you are." message.
 In order to commit, I open cmd in the project folder and run:
 * git init
@@ -12,7 +12,7 @@ In order to commit, I open cmd in the project folder and run:
 
 After that, I started to commit from Atom as well.
 
-##### 2 The tip of your current branch is behind its remote counterpart. Try pulling before pushing.
+##### 2- Error:  The tip of your current branch is behind its remote counterpart. Try pulling before pushing.
 
 After that, when I tried to push the changed file to GitHub I got the error:
 
