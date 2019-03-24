@@ -1,4 +1,4 @@
-#### Exapmles In Algorithms book of Sedgewick
+### Exapmles In Algorithms book of Sedgewick
 Repo for exercises in the book.
 
 ##### 1- Error: Unable to commit. Please let me know who you are.
