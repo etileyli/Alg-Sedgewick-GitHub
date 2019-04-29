@@ -1,4 +1,7 @@
-
+/*
+  Create a random 2D boolean array.
+  Program should be called with 2 integer inputs.
+*/
 public class sln_1_1_11
 {
   public static void main(String[] args) {
@@ -19,7 +22,7 @@ public class sln_1_1_11
         else
           boolArray[i][j] = true;
 
-    for (int i = 0; i < row; i++ ){      
+    for (int i = 0; i < row; i++ ){
         for (int j = 0; j < column; j++)
           if ( boolArray[i][j] == false)
             System.out.print("- ");
