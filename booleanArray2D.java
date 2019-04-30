@@ -1,7 +1,7 @@
 /*
   Solutions to 1.1.11 & 1.1.13
   Create a random 2D boolean array.
-  Program should be calle with two integer inputs
+  Program should be called with two positive integer inputs
   representing the dimensions of the array.
 */
 public class booleanArray2D
