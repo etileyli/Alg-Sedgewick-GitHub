@@ -26,7 +26,16 @@ public class createTable{
     }
   }
 
+  static void printTable(ArrayList<entry> entryList){
+
+    for (int i = 0; i < entryList.size(); i++){
+      Double div = Double.valueOf(entryList.get(i)._num1)/Double.valueOf(entryList.get(i)._num2);
+      System.out.println(entryList.get(i)._text + "\t" + entryList.get(i)._num1 + "\t" + entryList.get(i)._num2 + "\t" + String.format("%.3f", div));
+    }
+  }
+
   public static void main(String[] args) {
+    System.out.println("Enter \"Quit\" to exit, \"Print\" to print the table.");
 
     Scanner sc = new Scanner(System.in);
     String str;
@@ -35,6 +44,9 @@ public class createTable{
     while(!(str = sc.nextLine()).equals("Quit")){
 
       String[] splited = str.split("\\s+");
+
+      if (str.equals("Print"))
+        break;
 
       if ((splited.length != 3)){
         System.out.println("Three arguments should be entered.");
@@ -48,8 +60,15 @@ public class createTable{
 
       entry _entry = new entry(str);
       _entryList.add(_entry);
-      _entry.displayEntry();
+      // _entry.displayEntry();
     }
+
+    if (_entryList.size() > 0)
+      printTable(_entryList);
+    else{
+      System.out.println("Empty table. Exitting the program.");
+    }
+
 
   }
 }
